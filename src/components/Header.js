@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-
-import close_icon from '../assets/close_icon.svg';
+import NavBarButton from "./NavBarButton";
 
 function useOutsideAlerter(ref, setOpenNav) {
   useEffect(() => {
@@ -37,10 +36,10 @@ const Header = ({logo, homeText, productText, faqText, contactText}) => {
 
         <div className="flex justify-center w-80 lg:hidden">
             <div className="flex flex-col items-center justify-center">
-                <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{homeText}</a>
-                <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{productText}</a>
-                <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{faqText}</a>
-                <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{contactText}</a>
+                <NavBarButton href="#home" text={homeText} />
+                <NavBarButton href="#product" text={productText} />
+                <NavBarButton href="#faq" text={faqText} />
+                <NavBarButton href="#contact" text={contactText} />
             </div>
         </div>
 
@@ -48,10 +47,10 @@ const Header = ({logo, homeText, productText, faqText, contactText}) => {
           {/* Desktop NavBar */}
 
         <div className="flex justify-around w-80 lg:visible sm:invisible">
-            <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{homeText}</a>
-            <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{productText}</a>
-            <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{faqText}</a>
-            <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{contactText}</a>
+              <NavBarButton href="#home" text={homeText} />
+              <NavBarButton href="#product" text={productText} />
+              <NavBarButton href="#faq" text={faqText} />
+              <NavBarButton href="#contact" text={contactText} />
         </div>
 
     </div>
