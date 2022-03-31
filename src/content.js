@@ -4,11 +4,11 @@ import Rectangle_5 from './assets/Rectangle_5.png';
 
 export const data = {
     hero:{
-      appType: 'Food app',
-      tagLine: 'Why stay hungry when you can order from Bella Onojie',
-      description: 'Download the bella onoje’s food app now on',
-      mainActionText: 'Contattaci',
-      extraActionText: 'App Store',
+      appType: 'ECO-IT Foundation',
+      tagLine: 'Carbon emissions free',
+      description: 'Exploring what the sector can do to reduce its footprint',
+      mainActionText: 'Decarbonizing ICT',
+      extraActionText: 'See more...',
     },
     home:{
       homeText: 'Home',
@@ -17,31 +17,35 @@ export const data = {
       contactText: 'Contact',
     },
     step1: {
-      title: 'Create an account',
-      heading: 'Create/login to an existing account to get started',
-      description: 'An account is created with your email and a desired password',
+      title: 'Step 1',
+      heading: 'Footprint evaluations',
+      description: 'Direct carbon emissions associated with ICT manufacturing, use and disposal (ICT’s carbon footprint)',
       img: Rectangle_3,
       alternate: false,
     },
     step2: {
-      title: 'Explore while shopping',
-      heading: 'Shop for your favorites meal as e dey hot.',
-      description: 'Shop for your favorite meals or drinks and enjoy while doing it.',
+      title: 'Step 2',
+      heading: 'Emissions estimations',
+      description: 'Indirect positive or negative emission effects from using ICT (e.g. travel substitution and transportation optimization)',
       img: Rectangle_4,
       alternate: true,
     },
     step3: {
-      title: 'Checkout',
-      heading: "When you're done, check out and get it delivered.",
-      description: "When you're done, check out and get it  delivered with ease.",
+      title: 'Step 3',
+      heading: "Behaviour actions",
+      description: "Impacting behaviors and preferences (reshaping how we lead our lives on a societal level)",
       img: Rectangle_5,
       alternate: false,
     },
     bottomLead: {
-      actionText: 'Download the app now.',
-      description: 'Available on your favourite store. Start your premium experience now.',
-      mainActionText: 'Playstore',
-      extraActionText: 'App Store',
+      actionText: 'What can we all do to minimize the impact of our online life?',
+      description:
+          'Your digital carbon footprint is greatly\n' +
+          'influenced by the number of devices you have\n' +
+          'and how long you use them for, as well as\n' +
+          'where you live and use them',
+      mainActionText: 'See Journals',
+      extraActionText: 'Extra contents',
     },
     contact: {
       nameText: 'Nome',

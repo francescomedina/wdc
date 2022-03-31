@@ -32,7 +32,7 @@ function App() {
         
         {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
         
-        <div id="faq" className="bg-white py-20 text-3xl font-semibold text-center text-blue-800 lg:font-bold">How the app works </div>
+        <div id="faq" className="bg-white py-20 text-3xl font-semibold text-center text-blue-800 lg:font-bold">About the project</div>
         
         <Section
           title={data.step1.title}
