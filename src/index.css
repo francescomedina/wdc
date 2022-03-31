@@ -5,3 +5,40 @@
 body {
     background-color: #bcdcb4;
 }
+
+form {
+    width: 60%;
+}
+form > label {
+    color: blue ;
+}
+
+.flex-form {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.flex-form-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.form-flex-button {margin-left: 105px;}
+
+.flex-form-label {
+    width: 100px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.flex-form-input {
+    flex: 1;
+    -webkit-flex: 1;
+    border: 1px solid #333;
+    border-radius: 3px;
+}

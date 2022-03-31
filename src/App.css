@@ -17,6 +17,10 @@
   background-color: blue;
 }
 
+.label-style {
+  @apply p-10 block;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

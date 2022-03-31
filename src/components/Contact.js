@@ -35,20 +35,22 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    {this.nameText}:
-                    <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} required="required" />
-                </label>
-                <label>
-                    {this.emailText}:
-                    <input type="text" name="email" value={this.state.email} onChange={this.handleInputChange} required="required" />
-                </label>
-                <label>
-                    {this.messageText}:
-                    <input type="text" name="message" value={this.state.message} onChange={this.handleInputChange} required="required" />
-                </label>
-                <input type="submit" value={this.submitText} />
+            <form onSubmit={this.handleSubmit} className="flex-form">
+                <div className="flex-form-container">
+                    <label htmlFor="nome" className="flex-form-label">Nome:</label>
+                    <input type="text" id="nome" className="flex-form-input" />
+                </div>
+                <div className="flex-form-container">
+                    <label htmlFor="cognome" className="flex-form-label">Cognome:</label>
+                    <input type="text" id="cognome" className="flex-form-input" />
+                </div>
+                <div className="flex-form-container">
+                    <label htmlFor="email" className="flex-form-label">Indirizzo email:</label>
+                    <input type="text" id="email" className="flex-form-input" />
+                </div>
+                <div className="flex-form-container">
+                    <button className="btn btn-primary form-flex-button">Invia</button>
+                </div>
             </form>
         );
     }
