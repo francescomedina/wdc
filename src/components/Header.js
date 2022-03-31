@@ -35,7 +35,7 @@ const Header = ({logo}) => {
 
           {/* Mobile Nav */}
 
-        <div className="flex justify-center w-80 lg:invisible">
+        <div className="flex justify-center w-80 lg:hidden">
             <div className="flex flex-col items-center justify-center">
                 <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
                 <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Product</a>
