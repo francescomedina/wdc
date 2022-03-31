@@ -1,5 +1,5 @@
 import './App.css';
-import logo from "./assets/logo.png";
+import logo from "./assets1/logo_transparent.png";
 
 import Header from './components/Header';
 import About from './components/About';
@@ -22,9 +22,9 @@ function App() {
           extraActionText={data.hero.extraActionText}
         />
         
-        <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div>
+        {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
         
-        <div id="faq" className="pt-20 mb-20 text-3xl font-semibold text-center text-blue-800 lg:font-bold">How the app works </div>
+        <div id="faq" className="bg-white py-20 text-3xl font-semibold text-center text-blue-800 lg:font-bold">How the app works </div>
         
         <Section
           title={data.step1.title}

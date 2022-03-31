@@ -28,9 +28,9 @@ const Header = ({logo}) => {
   useOutsideAlerter(wrapperRef, setOpenNav);
 
   return (
-    <div className="flex flex-row items-center justify-between h-28">
-      <a href="/" className="pl-7 logo lg:ml-10">
-        <img height="65%" width="65%" src={logo} alt="logo" />
+    <div className="flex flex-col items-center justify-center h-80 bg-white">
+      <a href="/" className="logo">
+        <img className="object-scale-down h-48 w-96" src={logo} alt="logo" />
       </a>
 
           {/* Mobile Nav */}
@@ -55,12 +55,21 @@ const Header = ({logo}) => {
           
           {/* Desktop Nav */}
 
-          <div className="flex justify-around w-2/5 mr-12 lg:visible sm:invisible">
+          {/* <div className="flex justify-around w-2/5 mr-12 lg:visible sm:invisible">
               <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
               <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Product</a>
               <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Faq</a>
               <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
-          </div>
+          </div> */}
+
+        {/* <div className="flex justify-center w-100"> */}
+            <div className="flex justify-around w-80">
+                    <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
+                    <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Product</a>
+                    <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Faq</a>
+                    <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
+            </div>
+        {/* </div> */}
 
     </div>
   );

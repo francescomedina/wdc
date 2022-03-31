@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     colors: {
       orange: colors.orange,
-      gray: colors.gray,
-      blue: colors.blueGray,
-      white: colors.white,
+      gray: '#648c7c',
+      blue: '#05352d',
+      white: '#bcdcb4',
       },
       screens: {
         'sm': '300px',
