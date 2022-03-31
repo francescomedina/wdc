@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Section = ({title, heading, description, img, alternate}) => {
-    const row = "lg:items-center lg:flex lg:flex-row lg:justify-end";
-    const rowReverse = "lg:items-center lg:flex lg:flex-row-reverse lg:justify-center";
+    const row = "lg:items-center lg:flex lg:flex-row lg:justify-end bg-white";
+    const rowReverse = "lg:items-center lg:flex lg:flex-row-reverse lg:justify-center bg-white";
 
     return (
         <div className={alternate?row : rowReverse}>
