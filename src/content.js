@@ -1,6 +1,6 @@
-import Rectangle_3 from './assets/Rectangle_3.png';
-import Rectangle_4 from './assets/Rectangle_4.png';
-import Rectangle_5 from './assets/Rectangle_5.png';
+import Rectangle_3 from './assets1/foto1.jpg';
+import Rectangle_4 from './assets1/foto2.jpg';
+import Rectangle_5 from './assets1/foto3.jpg';
 
 export const data = {
     hero:{

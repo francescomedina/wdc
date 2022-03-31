@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section = ({title, heading, description, img, alternate}) => {
     const row = "lg:items-center lg:flex lg:flex-row lg:justify-end bg-white";
-    const rowReverse = "lg:items-center lg:flex lg:flex-row-reverse lg:justify-center bg-white";
+    const rowReverse = "lg:items-center lg:flex lg:flex-row-reverse lg:justify-center";
 
     return (
         <div className={alternate?row : rowReverse}>

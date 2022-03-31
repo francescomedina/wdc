@@ -41,8 +41,13 @@ function App() {
           mainActionText={data.hero.mainActionText}
           extraActionText={data.hero.extraActionText}
         />
+        
+        {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
+        
+        <div id="faq" className="bg-white py-20 text-3xl font-semibold text-center text-blue-800 lg:font-bold">About the project</div>
 
-<XYPlot
+        <div className="text-center">
+        <XYPlot
           className="clustered-stacked-bar-chart-example"
           xType="ordinal"
           stackBy="y"
@@ -54,11 +59,11 @@ function App() {
             orientation="horizontal"
             items={[
               {
-                title: 'Apples',
+                title: 'PCs',
                 color: '#12939A'
               },
               {
-                title: 'Oranges',
+                title: 'Servers',
                 color: '#79C7E3'
               }
             ]}
@@ -108,10 +113,7 @@ function App() {
             ]}
           />
         </XYPlot>
-        
-        {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
-        
-        <div id="faq" className="bg-white py-20 text-3xl font-semibold text-center text-blue-800 lg:font-bold">About the project</div>
+        </div>
         
         <Section
           title={data.step1.title}
