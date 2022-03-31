@@ -46,11 +46,11 @@ const Header = ({logo, homeText, productText, faqText, contactText}) => {
           
           {/* Desktop NavBar */}
 
-        <div className="flex justify-around w-80 lg:visible sm:invisible">
-              <NavBarButton href="#home" text={homeText} />
-              <NavBarButton href="#product" text={productText} />
-              <NavBarButton href="#faq" text={faqText} />
-              <NavBarButton href="#contact" text={contactText} />
+        <div className="flex justify-around w-80 lg:visible invisible">
+            <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
+            <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Product</a>
+            <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Faq</a>
+            <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
         </div>
 
     </div>

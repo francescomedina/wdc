@@ -4,12 +4,24 @@ import logo from "./assets1/logo_transparent.png";
 import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
+import Button from './components/Button';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Section from './components/Section';
 import { data } from './content';
+import '../node_modules/react-vis/dist/style.css';
+import {
+  XYPlot,
+  XAxis,
+  YAxis,
+  VerticalGridLines,
+  HorizontalGridLines,
+  VerticalBarSeries,
+  DiscreteColorLegend
+} from 'react-vis';
 
 function App() {
+  const BarSeries = VerticalBarSeries;
   return (
     <div className="box-border">
       <div className="flex flex-col">
@@ -33,6 +45,75 @@ function App() {
         {/* <div id="divider" className="rounded-full ring-2 ring-gray-200 lg:w-1/2 lg:mx-auto "></div> */}
         
         <div id="faq" className="bg-white py-20 text-3xl font-semibold text-center text-blue-800 lg:font-bold">About the project</div>
+
+        <div className="text-center">
+        <XYPlot
+          className="clustered-stacked-bar-chart-example"
+          xType="ordinal"
+          stackBy="y"
+          width={300}
+          height={300}
+        >
+          <DiscreteColorLegend
+            style={{position: 'absolute', left: '50px', top: '10px'}}
+            orientation="horizontal"
+            items={[
+              {
+                title: 'PCs',
+                color: '#12939A'
+              },
+              {
+                title: 'Servers',
+                color: '#79C7E3'
+              }
+            ]}
+          />
+          <VerticalGridLines />
+          <HorizontalGridLines />
+          <XAxis />
+          <YAxis />
+          <BarSeries
+            cluster="2015"
+            color="#12939A"
+            data={[
+              {x: 'Q1', y: 10},
+              {x: 'Q2', y: 5},
+              {x: 'Q3', y: 15},
+              {x: 'Q4', y: 20}
+            ]}
+          />
+          <BarSeries
+            cluster="2015"
+            color="#79C7E3"
+            data={[
+              {x: 'Q1', y: 3},
+              {x: 'Q2', y: 7},
+              {x: 'Q3', y: 2},
+              {x: 'Q4', y: 1}
+            ]}
+          />
+          <BarSeries
+            cluster="2016"
+            color="#12939A"
+            data={[
+              {x: 'Q1', y: 3},
+              {x: 'Q2', y: 8},
+              {x: 'Q3', y: 11},
+              {x: 'Q4', y: 19}
+            ]}
+          />
+          <BarSeries
+            cluster="2016"
+            color="#79C7E3"
+            data={[
+              {x: 'Q1', y: 22},
+              {x: 'Q2', y: 2},
+              {x: 'Q3', y: 22},
+              {x: 'Q4', y: 18}
+            ]}
+          />
+        </XYPlot>
+        </div>
         
         <Section
           title={data.step1.title}
