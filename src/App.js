@@ -3,8 +3,6 @@ import logo from "./assets/logo.png";
 
 import Header from './components/Header';
 import About from './components/About';
-import Contact from './components/Contact';
-import Button from './components/Button';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Section from './components/Section';
