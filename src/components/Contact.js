@@ -28,7 +28,7 @@ class Contact extends React.Component {
     }
 
     handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.name);
+        alert('Grazie per il messaggio, ' + this.state.name + '! Ti risponderemo al più presto sulla email ' + this.state.email);
 
         event.preventDefault();
     }
@@ -38,15 +38,15 @@ class Contact extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <label>
                     {this.nameText}:
-                    <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} />
+                    <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} required="required" />
                 </label>
                 <label>
                     {this.emailText}:
-                    <input type="text" name="email" value={this.state.email} onChange={this.handleInputChange} />
+                    <input type="text" name="email" value={this.state.email} onChange={this.handleInputChange} required="required" />
                 </label>
                 <label>
                     {this.messageText}:
-                    <input type="text" name="message" value={this.state.message} onChange={this.handleInputChange} />
+                    <input type="text" name="message" value={this.state.message} onChange={this.handleInputChange} required="required" />
                 </label>
                 <input type="submit" value={this.submitText} />
             </form>

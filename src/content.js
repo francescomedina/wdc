@@ -7,7 +7,7 @@ export const data = {
       appType: 'Food app',
       tagLine: 'Why stay hungry when you can order from Bella Onojie',
       description: 'Download the bella onoje’s food app now on',
-      mainActionText: 'Playstore',
+      mainActionText: 'Contattaci',
       extraActionText: 'App Store',
     },
     home:{
