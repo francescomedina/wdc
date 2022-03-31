@@ -38,15 +38,15 @@ class Contact extends React.Component {
             <form onSubmit={this.handleSubmit} className="flex-form">
                 <div className="flex-form-container">
                     <label htmlFor="nome" className="flex-form-label">Nome:</label>
-                    <input type="text" id="nome" className="flex-form-input" />
+                    <input type="text" id="nome" className="flex-form-input" required="required" />
                 </div>
                 <div className="flex-form-container">
                     <label htmlFor="cognome" className="flex-form-label">Cognome:</label>
-                    <input type="text" id="cognome" className="flex-form-input" />
+                    <input type="text" id="cognome" className="flex-form-input" required="required" />
                 </div>
                 <div className="flex-form-container">
                     <label htmlFor="email" className="flex-form-label">Indirizzo email:</label>
-                    <input type="text" id="email" className="flex-form-input" />
+                    <input type="text" id="email" className="flex-form-input" required="required" />
                 </div>
                 <div className="flex-form-container">
                     <button className="btn btn-primary form-flex-button">Invia</button>
