@@ -3,6 +3,7 @@ import logo from "./assets1/logo_transparent.png";
 
 import Header from './components/Header';
 import About from './components/About';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Section from './components/Section';
@@ -53,6 +54,13 @@ function App() {
             description={data.bottomLead.description}
             mainActionText={data.bottomLead.mainActionText}
             extraActionText={data.bottomLead.extraActionText}
+          />
+
+          <Contact
+            nameText={data.contact.nameText}
+            emailText={data.contact.emailText}
+            messageText={data.contact.messageText}
+            submitText={data.contact.submitText}
           />
 
           <Footer logo={logo}/>

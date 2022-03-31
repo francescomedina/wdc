@@ -37,4 +37,10 @@ export const data = {
       mainActionText: 'Playstore',
       extraActionText: 'App Store',
     },
+    contact: {
+      nameText: 'Nome',
+      emailText: 'Email',
+      messageText: 'Messaggio',
+      submitText: 'Invia',
+    },
   }
