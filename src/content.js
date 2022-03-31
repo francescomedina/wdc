@@ -10,6 +10,12 @@ export const data = {
       mainActionText: 'Playstore',
       extraActionText: 'App Store',
     },
+    home:{
+      homeText: 'Home',
+      productText: 'Product',
+      faqText: 'FAQ',
+      contactText: 'Contact',
+    },
     step1: {
       title: 'Create an account',
       heading: 'Create/login to an existing account to get started',

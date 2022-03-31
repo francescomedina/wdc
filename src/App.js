@@ -14,7 +14,14 @@ function App() {
     <div className="box-border">
       <div className="flex flex-col">
         
-        <Header logo={logo}/>
+        <Header 
+          logo={logo}
+          homeText={data.home.homeText}
+          productText={data.home.productText}
+          faqText={data.home.faqText}
+          contactText={data.home.contactText}
+        />
+        
         <Hero 
           appType={data.hero.appType}
           tagLine={data.hero.tagLine}

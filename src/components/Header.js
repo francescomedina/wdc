@@ -20,7 +20,7 @@ function useOutsideAlerter(ref, setOpenNav) {
   }, [ref]);
 }
 
-const Header = ({logo}) => {
+const Header = ({logo, homeText, productText, faqText, contactText}) => {
 
   const [openNav, setOpenNav] = useState(false);
 
@@ -33,25 +33,25 @@ const Header = ({logo}) => {
             <img className="object-scale-down h-48 w-96" src={logo} alt="logo" />
         </a>
 
-          {/* Mobile Nav */}
+          {/* Mobile NavBar */}
 
         <div className="flex justify-center w-80 lg:hidden">
             <div className="flex flex-col items-center justify-center">
-                <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
-                <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Product</a>
-                <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Faq</a>
-                <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
+                <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{homeText}</a>
+                <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{productText}</a>
+                <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{faqText}</a>
+                <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{contactText}</a>
             </div>
         </div>
 
           
-          {/* Desktop Nav */}
+          {/* Desktop NavBar */}
 
         <div className="flex justify-around w-80 lg:visible sm:invisible">
-            <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Home</a>
-            <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Product</a>
-            <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Faq</a>
-            <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">Contact</a>
+            <a href="#home" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{homeText}</a>
+            <a href="#product" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{productText}</a>
+            <a href="#faq" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{faqText}</a>
+            <a href="#contact" className="text-lg font-semibold text-blue-800 transition-all hover:text-orange-500">{contactText}</a>
         </div>
 
     </div>
