@@ -6,7 +6,7 @@ import rectangle_2 from '../assets/Rectangle_2.png';
 
 const Hero = ({appType, tagLine, description, mainActionText, extraActionText}) => {
   return (
-    <div id="product">
+    <div id="product" style={{color: "white"}}>
       <div style={{textShadow:'0px 1px 1px gray'}} className="flex flex-col items-center justify-start font-sans min-h-96 bg-gray-50 lg:pt-10 lg:pb-20 lg:bg-hero lg:bg-cover">
         <div>
           <p className="p-3 pt-12 text-lg font-bold text-gray-500 lg:text-gray-300">{appType}</p>

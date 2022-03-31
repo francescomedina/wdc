@@ -7,13 +7,13 @@ export const data = {
       appType: 'ECO-IT Foundation',
       tagLine: 'Carbon emissions free',
       description: 'Exploring what the sector can do to reduce its footprint',
-      mainActionText: 'Decarbonizing ICT',
+      mainActionText: 'Contact us',
       extraActionText: 'See more...',
     },
     home:{
       homeText: 'Home',
-      productText: 'Product',
-      faqText: 'FAQ',
+      productText: 'Mission',
+      faqText: 'Project',
       contactText: 'Contact',
     },
     step1: {
